@@ -1,0 +1,237 @@
+html{
+    scroll-behavior: smooth;
+    cursor: default;
+}
+
+
+body {
+    margin: 0;
+    font-family: monospace;
+    background-color: rgb(1, 1, 16);
+    background-image: url(../images/TOGO.png);
+    background-size: 100% auto;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 96%;
+    display: flex;
+    margin-top: 0px;
+    padding: 2px;
+    padding-right: 50px; 
+    justify-content: center;
+    align-content: space-around;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.navbar ul li a {
+    text-shadow: 2px 2px 5px black;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.navbar ul li a:hover{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 25, 104);
+    padding: 10px 20px;
+    border-radius: 15px;
+    transform: translateY(-5px) ;
+}
+
+.title{
+    color: white;
+    font-family: Bebas Neue;
+    text-align: center;
+}
+
+.title h1{
+    line-height: .5;
+    text-align: center;
+    font-size: 200px;
+    margin-top: 200px;
+}
+
+.arrowdown {
+    text-align: center;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    border: solid rgb(255, 255, 255);
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 10px;
+}
+
+
+.section{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 3rem auto;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 0 30px 5px rgba(255, 255, 255, 0.7);
+    margin-bottom: 250px;
+    scroll-margin-top: 150px;    
+}
+
+
+
+.section#museum{
+    margin-top: 600px;
+}
+
+.section img{
+    width: 30vw;
+    height: auto;
+    object-fit: contain;
+    padding-left: 40px;
+    border-radius: 12px;
+}
+
+@media (max-width: 1000px) {
+        .section img {
+            display: none;
+        }
+    }
+
+.section h1{
+    font-family: Bebas Neue;
+    text-decoration: none;
+    color: rgb(0, 25, 104);
+    padding-left: 40px;
+    padding-bottom: 5px;
+    font-size: 40px;
+}
+
+.section a{
+    text-decoration: none;
+}
+
+.section p{
+    font-family: monospace;
+    color: rgb(0, 25, 104);
+    padding-left: 40px;
+    font-size: 15px ;
+    line-height: 1.5;
+    text-indent: 30px;
+    text-align: justify;
+}
+
+.section2 {
+    background-color: rgb(0, 25, 104);
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 3rem auto;
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 0 30px 5px rgba(255, 255, 255, 0.7);
+    margin-bottom: 250px;
+    scroll-margin-top: 200px;
+}
+
+.section2 img{
+    width: 30vw;
+    height: auto;
+    object-fit: contain;
+    padding-right: 40px;
+    border-radius: 12px;
+}
+
+@media (max-width: 1000px) {
+        .section2 img {
+            display: none;
+        }
+    }
+
+
+.section2 h1{
+    font-family: Bebas Neue;
+    color: white;
+    padding-left: 1px;
+    padding-bottom: 5px;
+    font-size: 40px;
+}
+
+.section2 a{
+    text-decoration: none;
+}
+
+.section2 p{
+    font-family: monospace;
+    color: white;
+    padding-right: 40px;
+    font-size: 15px ;
+    line-height: 1.5;
+    text-indent: 30px;
+    text-align: justify;
+}
+
+
+.footer {
+    color: white;
+    padding: 1px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.company-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 0%;
+}
+
+.slogan {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 15px;
+    margin-top: -0px;
+}
+
+.about-link {
+    color: rgb(0, 25, 104);
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 500;
+    padding: 5px 10px;
+    border: 1px solid rgb(0, 25, 104);
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.about-link:hover {
+    background-color: rgb(0, 25, 104);
+    color: white;
+}
+
+.footer-copyright {
+    border-top: 1px solid #eee; /* Light separator line */
+    padding-top: 10px;
+    font-size: 0.8em;
+    color: #999;
+}

@@ -1,0 +1,690 @@
+html {
+    scroll-behavior: smooth;
+    cursor: default;
+}
+
+body{
+    font-family: monospace;
+    cursor: default;
+    margin: 0;
+    background-color: rgb(1, 1, 16);
+    background-image: url(../images/Home\ BG.jpg);  
+    background-size: 100% auto;
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+.logo{
+    margin-top: 20px;
+    height: auto;
+    width: 71px;
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 96%;
+    display: flex;
+    margin-top: 0px;
+    padding: 2px;
+    padding-right: 50px; 
+    justify-content: center;
+    align-content: space-around;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.navbar ul li a {
+    text-shadow: 2px 2px 5px black;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.navbar ul li a:hover{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 25, 104);
+    padding: 10px 20px;
+    border-radius: 15px;
+    transform: translateY(-5px) ;
+}
+
+.title{
+    text-align: center;
+}
+
+.title h1 {
+    color: white;
+    font-weight: 800;
+    font-size: 200px;
+    font-family: Bebas Neue;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: -20px;
+    line-height: .75;
+}
+
+.title h3{
+    color: white;
+    font-size: 32px;
+    text-align: center;
+}
+
+.arrowdown {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    border: solid rgb(255, 255, 255);
+    border-width: 0 5px 5px 0;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 75px;
+}
+
+.tplace{
+    scroll-margin-top: 80px; 
+}
+
+.tplace a{
+    text-decoration: none;
+}
+
+.tplace h1{
+    font-family: Bebas Neue;
+    color: white;
+    text-align: center;
+    margin-top: 300px;
+    font-size: 50px;
+}
+
+.places{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.image {
+    width: 300px;
+    position: relative;
+    margin: 80px;
+    margin-top: 20px;
+}
+
+
+.places img{
+    display: flex;
+    min-width: 300px;
+    max-width: 600px;
+    width: calc(100% - 100%);
+    height: 200px;
+    padding: 0px;
+    box-shadow: 0 0 10px 5px white;
+    border-radius: 16px;
+    margin: auto;
+    transition: 0.5s;
+    filter: hue-rotate(200px);
+}
+
+.content{
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    padding-left: 10px;
+    line-height: .5;
+    top: 0;
+    left: 0;
+    position: absolute;
+    display: flex;
+    justify-content: right;
+    align-items: flex-start;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.content:hover{
+    opacity: 1;
+}
+
+.content h1{
+    font-family: Bebas Neue;
+    color: white;
+    text-shadow: 0 0 20px rgb(0, 25, 104);
+}
+
+.content p{
+    color: white;
+    text-shadow: 0 0 20px rgb(0, 25, 104);
+}
+
+.tdelicacies{
+    scroll-margin-top: 80px;
+}
+.tdelicacies a{
+    text-decoration: none;
+}
+
+.tdelicacies h1{
+    font-family: Bebas Neue;
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 50px;
+}
+
+
+.delicacies{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+.delicacies img{
+    display: flex;
+    min-width: 300px;
+    max-width: 600px;
+    width: calc(100% - 100%);
+    height: 200px;
+    padding: 0px;
+    box-shadow: 0 0 10px 5px white;
+    border-radius: 16px;
+    margin: auto;
+    transition: 0.5s;
+}
+
+
+.footer {
+    color: white;
+    padding: 1px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.company-name {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 0%;
+}
+
+.slogan {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 15px;
+    margin-top: -0px;
+}
+
+.about-link {
+    color: rgb(0, 25, 104);
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 500;
+    padding: 5px 10px;
+    border: 1px solid rgb(0, 25, 104);
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.about-link:hover {
+    background-color: rgb(0, 25, 104);
+    color: white;
+}
+
+.footer-copyright {
+    border-top: 1px solid #eee; /* Light separator line */
+    padding-top: 10px;
+    font-size: 0.8em;
+    color: #999;
+}
+
+
+/* MQ for <414px */
+
+@media (max-width: 414px) {
+
+    body{
+        background-image: url(../images/Home\ BG.jpg); 
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+
+    .logo{
+        margin-top: 5px;
+        width: 20px;
+        
+    }
+
+    .title h1{
+        color: white;
+        font-weight: 800;
+        font-size: 50px;
+        font-family: Bebas Neue;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        line-height: .8;
+    }
+
+    .title h3{
+        color: white;
+        font-size: 9px;
+        text-align: center;
+    }
+
+    .arrowdown {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        border: solid rgb(255, 255, 255);
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 3px;
+        margin-top: 5px;
+    }
+
+    .navbar{
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        width: 95%;
+        display: flex;
+        margin-top: 0px;
+        padding: 2px;
+        padding-right: 50px; 
+        justify-content: center;
+        align-content: space-around;
+    }
+
+    .navbar ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+    }
+
+    .navbar ul li a {
+        text-shadow: 2px 2px 5px black;
+        text-decoration: none;
+        color: white;
+        display: inline-block;
+        font-size: 8px;
+        padding: 5px 10px;
+        transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+
+    .navbar ul li a:hover{
+        background: rgb(255, 255, 255);
+        color: rgb(0, 25, 104);
+        padding: 10px 20px;
+        border-radius: 15px;
+        transform: translateY(-5px) ;
+    }
+
+
+    .tplace h1{
+        font-family: Bebas Neue;
+        color: white;
+        text-align: center;
+        margin-top: 30px;
+        font-size: 25px;
+    }
+
+    .image {
+        width: 300px;
+        position: relative;
+        margin: 30px;
+        margin-top: 1px;
+    }
+
+    .places img{
+        display: flex;
+        flex-direction: row;
+        min-width: 100px;
+        max-width: 200px;
+        width: calc(100% + 100%);
+        height: 150px;
+        box-shadow: 0 0 10px 5px white;
+        transition: 0.5s;
+        filter: hue-rotate(1    00px);
+    }
+
+    .content{
+        width: 100%;
+        height: 100%;
+        padding-top: 70px;
+        padding-left: 5px;
+        line-height: .5;
+        top: 0;
+        left: 0;
+        position: absolute;
+        text-align: right;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        flex-direction: column;
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    .content:hover{
+    opacity: 1;
+    }
+
+    .content h1{
+        font-family: Bebas Neue;
+        font-size: 20px;
+        color: white;
+        text-shadow: 0 0 20px rgb(0, 25, 104);
+    }
+
+    .content p{
+        color: white;
+        font-size: 10px;
+        text-shadow: 0 0 20px rgb(0, 25, 104);
+    }
+
+    .tdelicacies h1{
+        font-family: Bebas Neue;
+        color: white;
+        text-align: center;
+        margin-top: 30px;
+        font-size: 25px;
+    }
+
+    .delicacies img{
+        display: flex;
+        flex-direction: row;
+        min-width: 100px;
+        max-width: 200px;
+        width: calc(100% + 100%);
+        height: 150px;
+        box-shadow: 0 0 10px 5px white;
+        transition: 0.5s;
+        filter: hue-rotate(1    00px);
+    }
+
+    .footer {
+        color: white;
+        padding: 1px;
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .company-name {
+        font-size: 1em;
+        font-weight: bold;
+        margin-bottom: 0%;
+    }
+
+    .slogan {
+        font-size: 0.5em;
+        color: #666;
+        margin-bottom: 5px;
+        margin-top: -0px;
+    }
+
+    .about-link {
+        color: rgb(0, 25, 104);
+        text-decoration: none;
+        font-size: .5em;
+        font-weight: 500;
+        padding: 5px 10px;
+        border: 1px solid rgb(0, 25, 104);
+        border-radius: 4px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .footer-copyright {
+        border-top: 1px solid #eee; /* Light separator line */
+        padding-top: 10px;
+        font-size: 0.4em;
+        color: #999;
+    }
+
+   
+}
+
+/* MQ for 415px and 428px */
+
+@media (min-width: 415px) and (max-width: 428px) {
+
+    body{
+        background-image: url(../images/Home\ BG.jpg); 
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-color: white;
+    }
+
+    .logo{
+        margin-top: 5px;
+        width: 20px;
+        
+    }
+
+    .title h1{
+        color: white;
+        font-weight: 800;
+        font-size: 50px;
+        font-family: Bebas Neue;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        line-height: .8;
+    }
+
+    .title h3{
+        color: white;
+        font-size: 9px;
+        text-align: center;
+    }
+
+    .arrowdown {
+        transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        border: solid rgb(255, 255, 255);
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 3px;
+        margin-top: 5px;
+    }
+
+    .navbar{
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        width: 95%;
+        display: flex;
+        margin-top: 0px;
+        padding: 2px;
+        padding-right: 50px; 
+        justify-content: center;
+        align-content: space-around;
+    }
+
+    .navbar ul {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+    }
+
+    .navbar ul li a {
+        text-shadow: 2px 2px 5px black;
+        text-decoration: none;
+        color: white;
+        display: inline-block;
+        font-size: 8px;
+        padding: 5px 10px;
+        transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+    }
+
+    .navbar ul li a:hover{
+        background: rgb(255, 255, 255);
+        color: rgb(0, 25, 104);
+        padding: 10px 20px;
+        border-radius: 15px;
+        transform: translateY(-5px) ;
+    }
+
+
+    .tplace h1{
+        font-family: Bebas Neue;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        margin-top: 30px;
+        font-size: 25px;
+    }
+
+    .image {
+        width: 300px;
+        position: relative;
+        margin: 30px;
+        margin-top: 1px;
+    }
+
+    .places img{
+        display: flex;
+        flex-direction: row;
+        min-width: 100px;
+        max-width: 200px;
+        width: calc(100% + 100%);
+        height: 150px;
+        box-shadow: 0 0 10px 5px rgb(0, 0, 0);
+        transition: 0.5s;
+        filter: hue-rotate(1    00px);
+    }
+
+    .content{
+        width: 100%;
+        height: 100%;
+        padding-top: 70px;
+        padding-left: 5px;
+        line-height: .5;
+        top: 0;
+        left: 0;
+        position: absolute;
+        text-align: right;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        flex-direction: column;
+        opacity: 0;
+        transition: 0.5s;
+    }
+
+    .content:hover{
+    opacity: 1;
+    }
+
+    .content h1{
+        font-family: Bebas Neue;
+        font-size: 20px;
+        color: white;
+        text-shadow: 0 0 20px rgb(0, 25, 104);
+    }
+
+    .content p{
+        color: white;
+        font-size: 10px;
+        text-shadow: 0 0 20px rgb(0, 25, 104);
+    }
+
+    .tdelicacies h1{
+        font-family: Bebas Neue;
+        color: rgb(0, 0, 0);
+        text-align: center;
+        margin-top: 30px;
+        font-size: 25px;
+    }
+
+    .delicacies img{
+        display: flex;
+        flex-direction: row;
+        min-width: 100px;
+        max-width: 200px;
+        width: calc(100% + 100%);
+        height: 150px;
+        box-shadow: 0 0 10px 5px rgb(0, 0, 0);
+        transition: 0.5s;
+        filter: hue-rotate(1    00px);
+    }
+
+    .footer {
+        color: rgb(0, 0, 0);
+        padding: 1px;
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15px;
+    }
+
+    .company-name {
+        font-size: 1em;
+        font-weight: bold;
+        margin-bottom: 0%;
+    }
+
+    .slogan {
+        font-size: 0.5em;
+        color: #666;
+        margin-bottom: 5px;
+        margin-top: -0px;
+    }
+
+    .about-link {
+        color: rgb(0, 25, 104);
+        text-decoration: none;
+        font-size: .5em;
+        font-weight: 500;
+        padding: 5px 10px;
+        border: 1px solid rgb(0, 25, 104);
+        border-radius: 4px;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .footer-copyright {
+        border-top: 1px solid #000000; /* Light separator line */
+        padding-top: 10px;
+        font-size: 0.4em;
+        color: #999;
+    }
+
+   
+}

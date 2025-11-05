@@ -1,0 +1,96 @@
+body {
+    margin: 0;
+    font-family: monospace;
+    background-color: rgb(1, 1, 16);
+}
+
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 96%;
+    display: flex;
+    margin-top: 0px;
+    padding: 2px;
+    padding-right: 50px; 
+    justify-content: center;
+    align-content: space-around;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.navbar ul li a {
+    text-shadow: 2px 2px 5px black;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    font-size: 16px;
+    padding: 10px 20px;
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.navbar ul li a:hover{
+    background: rgb(255, 255, 255);
+    color: rgb(0, 25, 104);
+    padding: 10px 20px;
+    border-radius: 15px;
+    transform: translateY(-5px) ;
+}
+
+.section{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 3rem auto;
+    border-radius: 16px;
+    box-shadow: 0 0 30px 5px rgba(255, 255, 255, 0.7);
+}
+
+.section img{
+    width: 400px;
+    height: auto;
+    object-fit: contain;
+    padding: 0;
+}
+
+.section h1{
+    font-family: Bebas Neue;
+    color: rgb(0, 25, 104);
+    padding-left: 40px;
+    padding-bottom: 5px;
+    font-size: 40px;
+}
+
+.section p{
+    font-family: monospace;
+    color: rgb(0, 25, 104);
+    padding-left: 40px;
+    font-size: 15px ;
+    line-height: 1.5;
+    text-indent: 30px;
+    text-align: justify;
+    padding-right: 10px;
+}
+
+
+.footer {
+    color: white;
+    padding: 1px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-copyright {
+    border-top: 1px solid #eee; /* Light separator line */
+    padding-top: 10px;
+    font-size: 0.8em;
+    color: #999;
+}
